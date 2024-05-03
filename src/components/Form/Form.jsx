@@ -49,7 +49,7 @@ const Form = () => {
                 <div>
                     <h2>Form Data</h2>
                     <p>Hej {formData.title}! Välkommen till mitt digitala CV</p>
-                    <p>Body: {generateMessage()}</p>
+                    <p> {generateMessage()}</p>
                 </div>
             )}
         </div>
