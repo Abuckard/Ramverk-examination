@@ -1,10 +1,17 @@
 import Header from "../Header/Header"
+import './contact.css'
 
 export default function Contact() {
     return (
-      <div>
+      <div className="contact">
           <Header />
-          <div>Contact</div>
+          <div className="contact-container">
+            <img src="/src/assets/Images/Alex.png" alt="" />
+            <section>
+                <h1>Hi, I'm Alex</h1>
+                <p>Frontend developer</p>
+            </section>
+          </div>
       </div>
     )
   }
