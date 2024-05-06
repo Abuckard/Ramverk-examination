@@ -3,17 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh
 }
 img {
     width: 600px;
     height: 600px;
     border-radius: 50%;
-}
-.theme-light {
-    background-color: aliceblue;
-    color: black;
-}
-.theme-dark {
-    background-color: black;
-    color: aliceblue;
 }

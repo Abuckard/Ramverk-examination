@@ -1,8 +1,8 @@
 .theme-light {
     background-color: aliceblue;
-    color: black;
+    color: #121212;
 }
 .theme-dark {
-    background-color: black;
+    background-color: #121212;
     color: aliceblue;
 }

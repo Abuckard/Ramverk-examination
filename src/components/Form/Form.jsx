@@ -42,7 +42,7 @@ const Form = () => {
                     name="body" 
                     id="body"
                 ></input>
-                <button type="submit">Submit</button> {/* Knappen av typen submit för att skicka formuläret */}
+                <button type="submit" className="btn-submit">Submit</button> {/* Knappen av typen submit för att skicka formuläret */}
             </form>
 
             {/* Villkorlig rendering av den sista div-en baserat på värdet av formSubmitted */}

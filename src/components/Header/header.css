@@ -4,4 +4,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #6b8899;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
 }
