@@ -1,0 +1,8 @@
+.theme-light {
+    background-color: aliceblue;
+    color: black;
+}
+.theme-dark {
+    background-color: black;
+    color: aliceblue;
+}

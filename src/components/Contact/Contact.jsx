@@ -1,8 +1,10 @@
 import Header from "../Header/Header"
 import './contact.css'
+import ThemeProvider from "../../features/ThemeProvider"
 
 export default function Contact() {
     return (
+
       <div className="contact">
           <Header />
           <div className="contact-container">
@@ -13,5 +15,6 @@ export default function Contact() {
             </section>
           </div>
       </div>
+
     )
   }

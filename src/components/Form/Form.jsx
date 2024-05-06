@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./form.css"
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -22,9 +23,9 @@ const Form = () => {
     }
 
     return (
-        <div>
+        <div className="form-container">
             <form onSubmit={handleSubmit}>
-                <h1>Här testar vi props och useState</h1>
+                <h1>Interaktiv sektion</h1>
                 <label htmlFor="title">Skriv ditt namn här</label>
                 <input 
                     onChange={(e) => setFormData({...formData, title: e.target.value})} 
@@ -34,7 +35,7 @@ const Form = () => {
                     id="title" 
                 />
 
-                <label htmlFor="body">Här kan du skriva lite om dig själv</label>
+                <label htmlFor="body">Vilken är din favoritfärg?</label>
                 <input
                     onChange={(e) => setFormData({...formData, body: e.target.value})}  
                     value={formData.body} 
@@ -46,11 +47,11 @@ const Form = () => {
 
             {/* Villkorlig rendering av den sista div-en baserat på värdet av formSubmitted */}
             {formSubmitted && (
-                <div>
-                    <h2>Form Data</h2>
+                <section>
+                    <h2>Tack för att du testar den interaktiva sektionen</h2>
                     <p>Hej {formData.title}! Välkommen till mitt digitala CV</p>
                     <p> {generateMessage()}</p>
-                </div>
+                </section>
             )}
         </div>
     )

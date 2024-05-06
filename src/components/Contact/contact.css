@@ -9,3 +9,11 @@ img {
     height: 600px;
     border-radius: 50%;
 }
+.theme-light {
+    background-color: aliceblue;
+    color: black;
+}
+.theme-dark {
+    background-color: black;
+    color: aliceblue;
+}

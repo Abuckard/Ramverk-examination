@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'; // Här importerar jag useState och useEffect
 import Header from '../Header/Header'; // Importerar min Header-komponent som används på alla sidor.
+import Api from '../Project/Api.jsx';
+import ThemeProvider from '../../features/ThemeProvider'
 
 
 //Här under kallar jag på GitHub API. Med hjälp av async och await säkrar jag upp att inte sidan laddas innan all information är hämtad.
@@ -36,9 +38,11 @@ export default function Project() {
     }, []); 
 
     return ( // Här skriver jag sen ut informationen jag hämtat från APIn på sidan.
+        <ThemeProvider>
         <div>
             <Header />
-            <div>Project</div>
+            <section className="project-container">
+            <h1>Projekt</h1>
             {githubInfo && (
                 <div>
                     <p>Användare: {githubInfo.userLogin}</p>
@@ -47,6 +51,10 @@ export default function Project() {
 
                 </div>
             )}
+
+            <Api />
+            </section>
         </div>
+        </ThemeProvider>
     );
 }
