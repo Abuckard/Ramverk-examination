@@ -7,9 +7,9 @@ import ThemeToggler from '../ThemeToggler'
 export default function Header() {
   return (
     <nav>
-        <Link to="/">Contact</Link>
-        <Link to="/project">Project</Link>
-        <Link to="/about">About me</Link>
+        <Link to="/">Hem</Link>
+        <Link to="/project">Projekt</Link>
+        <Link to="/about">Interaktiv sektion</Link>
         <ThemeToggler />
         
         

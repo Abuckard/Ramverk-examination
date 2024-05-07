@@ -42,7 +42,7 @@ export default function Project() {
         <div>
             <Header />
             <section className="project-container">
-            <h1>Projekt</h1>
+            <h1>Här är lite information om min github</h1>
             {githubInfo && (
                 <div>
                     <p>Användare: {githubInfo.userLogin}</p>
