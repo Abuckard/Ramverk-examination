@@ -8,3 +8,7 @@ nav {
     font-size: 25px;
     font-weight: bold;
 }
+.props-name {
+    color: rgb(211, 10, 10);
+    font-size: 40px;
+}

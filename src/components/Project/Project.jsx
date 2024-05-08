@@ -26,7 +26,7 @@ async function getGitHubUserInfo(username) {
 export default function Project() {
     const [githubInfo, setGithubInfo] = useState(null); // Här sätter jag githubInfo till null i starten av sidan, sedan hämtar den ett objekt och uppdaterar det med hjälp av setGithubInfo.
 
-    useEffect(() => {
+    useEffect(() => {  // useEffect används för att köra sidoeffekter i funktionella komponenter.
         const username = "Abuckard"; 
         if (username) {
             getGitHubUserInfo(username)
@@ -37,14 +37,14 @@ export default function Project() {
         }
     }, []); 
 
-    return ( // Här skriver jag sen ut informationen jag hämtat från APIn på sidan.
+    return ( // Här skriver jag sen ut informationen jag hämtat från APIn på sidan. Jag wrappar den också i ThemeProvider för att kunna ge den ett tema.
         <ThemeProvider>
         <div>
             <Header />
             <section className="project-container">
-            <h1>Här är lite information om min github</h1>
+            <h1 className="project-title">Här är lite information om min github</h1>
             {githubInfo && (
-                <div>
+                <div className="project-information">
                     <p>Användare: {githubInfo.userLogin}</p>
                     <p>Antal följare: {githubInfo.followers}</p>
                     <p>Antal repositories: {githubInfo.reposCount}</p>
